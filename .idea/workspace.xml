@@ -4,13 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5d44bc-3c76-4840-9e7d-b8ea67c548d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/DoanLaptrinhamthanh.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="aa5d44bc-3c76-4840-9e7d-b8ea67c548d6" name="Changes" comment="Beat">
+      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analysis/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analysis/beat_detector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analysis/fft_analyzer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/audio/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/audio/loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/audio/player.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/main_window.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual/beat_widget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual/spectrum_widget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual/waveform_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +35,9 @@
   "associatedIndex": 0
 }]]></component>
   <component name="ProjectId" id="3BB1Zb73MqlVzcZKheV0xg1HGiO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,6 +46,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Workspace for Python/DoanLaptrinhamthanh/analysis",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -41,6 +55,18 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace for Python\DoanLaptrinhamthanh\analysis" />
+      <recent name="D:\Workspace for Python\DoanLaptrinhamthanh\audio" />
+      <recent name="D:\Workspace for Python\DoanLaptrinhamthanh\ui" />
+      <recent name="D:\Workspace for Python\DoanLaptrinhamthanh\visual" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace for Python\DoanLaptrinhamthanh\visual" />
+      <recent name="D:\Workspace for Python\DoanLaptrinhamthanh\aduio" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -57,11 +83,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1773947706204</updated>
-      <workItem from="1773947707570" duration="554000" />
+      <workItem from="1773947707570" duration="1989000" />
     </task>
+    <task id="LOCAL-00001" summary="Beat">
+      <option name="closed" value="true" />
+      <created>1773948693755</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1773948693755</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Beat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Beat" />
   </component>
 </project>
