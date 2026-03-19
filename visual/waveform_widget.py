@@ -12,8 +12,8 @@ from PyQt5.QtCore import Qt, QTimer
 
 class WaveformWidget(QWidget):
     COLOR_BG      = QColor("#121212")
-    COLOR_WAVE    = QColor("#1DB954")
-    COLOR_WAVE_DIM = QColor("#0F6B30")
+    COLOR_WAVE    = QColor("#A855F7")
+    COLOR_WAVE_DIM = QColor("#7C3AED")
     COLOR_CENTER  = QColor("#282828")
     COLOR_LABEL   = QColor("#535353")
 

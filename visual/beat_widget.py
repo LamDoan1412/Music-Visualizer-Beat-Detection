@@ -11,9 +11,9 @@ from PyQt5.QtCore import Qt, QTimer, QPointF
 
 class BeatWidget(QWidget):
     COLOR_BG      = QColor("#121212")
-    COLOR_BEAT    = QColor("#1DB954")
-    COLOR_RING    = QColor("#1ED760")
-    COLOR_DIM     = QColor("#0A3D1A")
+    COLOR_BEAT    = QColor("#A855F7")
+    COLOR_RING    = QColor("#C084FC")
+    COLOR_DIM     = QColor("#3B1F6B")
 
     def __init__(self, parent=None):
         super().__init__(parent)

@@ -107,13 +107,13 @@ python main.py
 
 ## 👥 Phân công nhóm
 
-| Thành viên | Phần đảm nhận |
-|-----------|---------------|
-| Người 1 | `audio/player.py` — Phát nhạc, điều khiển |
-| Người 2 | `analysis/fft_analyzer.py` — Xử lý FFT |
-| Người 3 | `analysis/beat_detector.py` — Beat detection |
-| Người 4 | `visual/` — Spectrum, Waveform, Beat widget |
-| Người 5 | `ui/main_window.py` — Giao diện PyQt5 |
+| Thành viên      | Phần đảm nhận |
+|-----------------|---------------|
+| Lại Nanh        | `audio/player.py` — Phát nhạc, điều khiển |
+| Hưng Bitch      | `analysis/fft_analyzer.py` — Xử lý FFT |
+| Manh            | `analysis/beat_detector.py` — Beat detection |
+| Bé Xuân Mai     | `visual/` — Spectrum, Waveform, Beat widget |
+| Nguyễn Thị Hiền | `ui/main_window.py` — Giao diện PyQt5 |
 
 ---
 

@@ -42,11 +42,11 @@ QLabel#subtitle {
     font-size: 12px;
 }
 QLabel#green {
-    color: #1DB954;
+    color: #A855F7;
     font-weight: bold;
 }
 QPushButton#btnPlay {
-    background-color: #1DB954;
+    background-color: #A855F7;
     color: #000000;
     border: none;
     border-radius: 20px;
@@ -56,10 +56,10 @@ QPushButton#btnPlay {
     min-width: 80px;
 }
 QPushButton#btnPlay:hover {
-    background-color: #1ED760;
+    background-color: #C084FC;
 }
 QPushButton#btnPlay:pressed {
-    background-color: #17A349;
+    background-color: #9333EA;
 }
 QPushButton#btnSecondary {
     background-color: transparent;
@@ -77,15 +77,15 @@ QPushButton#btnSecondary:hover {
 }
 QPushButton#btnLoad {
     background-color: transparent;
-    color: #1DB954;
-    border: 1px solid #1DB954;
+    color: #A855F7;
+    border: 1px solid #A855F7;
     border-radius: 16px;
     font-size: 12px;
     font-weight: bold;
     padding: 6px 18px;
 }
 QPushButton#btnLoad:hover {
-    background-color: #1DB954;
+    background-color: #A855F7;
     color: #000000;
 }
 QSlider::groove:horizontal {
@@ -102,11 +102,11 @@ QSlider::handle:horizontal {
     border-radius: 6px;
 }
 QSlider::sub-page:horizontal {
-    background: #1DB954;
+    background: #A855F7;
     border-radius: 2px;
 }
 QSlider::handle:horizontal:hover {
-    background: #1DB954;
+    background: #A855F7;
     width: 14px;
     height: 14px;
     margin: -5px 0;
@@ -124,7 +124,7 @@ QProgressBar {
     color: transparent;
 }
 QProgressBar::chunk {
-    background-color: #1DB954;
+    background-color: #A855F7;
     border-radius: 2px;
 }
 """
@@ -230,7 +230,7 @@ class MainWindow(QMainWindow):
         self.lbl_album.setAlignment(Qt.AlignCenter)
         self.lbl_album.setFont(QFont("Segoe UI", 24))
         self.lbl_album.setStyleSheet(
-            "background:#282828; border-radius:8px; color:#1DB954;"
+            "background:#282828; border-radius:8px; color:#A855F7;"
         )
         row.addWidget(self.lbl_album)
 

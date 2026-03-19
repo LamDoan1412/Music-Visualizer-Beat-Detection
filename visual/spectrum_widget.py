@@ -1,7 +1,7 @@
 """
 visual/spectrum_widget.py
 Widget vẽ FFT Spectrum (cột tần số) theo phong cách Spotify
-Màu xanh lá (#1DB954) như Spotify
+Màu xanh lá (#A855F7) như Spotify
 """
 
 import numpy as np
@@ -12,9 +12,9 @@ from PyQt5.QtCore import Qt, QRect, QTimer
 
 class SpectrumWidget(QWidget):
     # Màu Spotify
-    COLOR_SPOTIFY_GREEN = QColor("#1DB954")
-    COLOR_SPOTIFY_MID   = QColor("#17A349")
-    COLOR_SPOTIFY_LOW   = QColor("#0F6B30")
+    COLOR_SPOTIFY_GREEN = QColor("#A855F7")
+    COLOR_SPOTIFY_MID   = QColor("#9333EA")
+    COLOR_SPOTIFY_LOW   = QColor("#7C3AED")
     COLOR_BG            = QColor("#121212")
     COLOR_GRID          = QColor("#282828")
 
@@ -103,7 +103,7 @@ class SpectrumWidget(QWidget):
             grad = QLinearGradient(x, y, x, h)
 
             if val > 0.75:
-                grad.setColorAt(0.0, QColor("#1ED760"))   # Sáng nhất
+                grad.setColorAt(0.0, QColor("#C084FC"))   # Sáng nhất
                 grad.setColorAt(0.5, self.COLOR_SPOTIFY_GREEN)
                 grad.setColorAt(1.0, self.COLOR_SPOTIFY_LOW)
             elif val > 0.4:
