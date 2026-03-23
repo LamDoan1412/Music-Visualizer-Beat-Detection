@@ -117,14 +117,6 @@ python main.py
 
 ---
 
-## 📅 Timeline
-
-- **Tuần 1**: Player + Loader + Waveform cơ bản
-- **Tuần 2**: FFT + Spectrum + Beat detection
-- **Tuần 3**: Visual effects + UI hoàn chỉnh + Demo
-
----
-
 ## 🛠️ Tech Stack
 
 - **Python 3.12**
