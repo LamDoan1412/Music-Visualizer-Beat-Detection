@@ -11,7 +11,7 @@ import numpy as np
 from PyQt5.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QLabel, QPushButton, QSlider, QFileDialog,
-    QProgressBar, QFrame, QSizePolicy
+    QProgressBar, QFrame, QSizePolicy, QStyle
 )
 from PyQt5.QtCore import Qt, QTimer, pyqtSlot
 from PyQt5.QtGui import QFont, QColor, QPalette, QIcon
@@ -282,27 +282,34 @@ class MainWindow(QMainWindow):
         layout.addLayout(progress_row)
 
         # Buttons
+        # Buttons
         btn_row = QHBoxLayout()
         btn_row.setAlignment(Qt.AlignCenter)
         btn_row.setSpacing(12)
 
-        self.btn_stop = QPushButton("■  STOP")
+        # STOP
+        self.btn_stop = QPushButton(" STOP")
         self.btn_stop.setObjectName("btnSecondary")
         self.btn_stop.setFont(QFont("Segoe UI", 11))
         self.btn_stop.setEnabled(False)
         self.btn_stop.setCursor(Qt.PointingHandCursor)
+        self.btn_stop.setIcon(self.style().standardIcon(QStyle.SP_MediaStop))
 
-        self.btn_play = QPushButton("▶  PLAY")
+        # PLAY
+        self.btn_play = QPushButton(" PLAY")
         self.btn_play.setObjectName("btnPlay")
         self.btn_play.setFont(QFont("Segoe UI", 12, QFont.Bold))
         self.btn_play.setEnabled(False)
         self.btn_play.setCursor(Qt.PointingHandCursor)
+        self.btn_play.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
 
-        self.btn_pause = QPushButton("⏸  PAUSE")
+        # PAUSE
+        self.btn_pause = QPushButton(" PAUSE")
         self.btn_pause.setObjectName("btnSecondary")
         self.btn_pause.setFont(QFont("Segoe UI", 11))
         self.btn_pause.setEnabled(False)
         self.btn_pause.setCursor(Qt.PointingHandCursor)
+        self.btn_pause.setIcon(self.style().standardIcon(QStyle.SP_MediaPause))
 
         btn_row.addWidget(self.btn_stop)
         btn_row.addWidget(self.btn_play)
@@ -488,13 +495,15 @@ class MainWindow(QMainWindow):
     @pyqtSlot(str)
     def _on_state_changed(self, state: str):
         if state == "playing":
-            self.btn_play.setText("▶  PLAY")
+            self.btn_play.setIcon(self.style().standardIcon(QStyle.SP_MediaPause))
             self._is_playing = True
+
         elif state == "paused":
-            self.btn_pause.setText("▶  RESUME")
+            self.btn_play.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
             self._is_playing = False
+
         elif state == "stopped":
-            self.btn_pause.setText("⏸  PAUSE")
+            self.btn_play.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
             self.btn_pause.setEnabled(False)
             self._is_playing = False
 
